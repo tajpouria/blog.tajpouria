@@ -6,7 +6,7 @@
 body {
   --bg: white;
   --textNormal: #222;
-  --textLink: hsl(0, 80%, 55%);
+  --textLink: hsl(0, 81%, 45%);
   --hr: #222;
 
   background-color: var(--bg);

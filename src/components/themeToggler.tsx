@@ -18,8 +18,9 @@ export const ThemeToggler = () => {
             : {};
 
         return (
-          <label>
+          <label htmlFor="themeToggler">
             <input
+              id="themeToggler"
               type="checkbox"
               onChange={handleToggle}
               checked={theme === 'dark'}
