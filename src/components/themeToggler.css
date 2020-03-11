@@ -1,0 +1,50 @@
+label {
+  position: relative;
+  --duration: 0.5s;
+  --themeTogglerColor: hsl(0, 80%, 55%);
+  font-size: 3rem;
+  height: 60%;
+  cursor: pointer;
+}
+label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+label > svg {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  color: var(--themeTogglerColor);
+  border: 0.2rem solid var(--themeTogglerColor);
+  transition: color 0.25s ease-in-out;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+label input + svg .rotate {
+  transition: transform var(--duration) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform var(--duration) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+label input:checked + svg .rotate {
+  transform: rotate(180deg);
+}
+
+label input + svg .flip {
+  transition: transform var(--duration) step-end;
+  transition: transform var(--duration) step-end;
+}
+
+label input + svg .flip {
+  transition: transform 2s step-end;
+  transition: transform var(--duration) step-end;
+}
+
+label input:checked + svg .flip {
+  transform: scale(-1, 1);
+}

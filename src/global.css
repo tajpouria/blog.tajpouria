@@ -1,0 +1,29 @@
+/* global.css */
+
+:root {
+}
+
+body {
+  --bg: white;
+  --textNormal: #222;
+  --textLink: hsl(0, 80%, 55%);
+  --hr: #222;
+
+  background-color: var(--bg);
+  transition: all 0.5s ease-out, background 0.5s ease-out,
+    background-color 0.5s ease-out;
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #282c35;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textLink: yellow;
+  --hr: rgba(255, 255, 255, 0.88);
+}
+
+::selection {
+  background-color: var(--textLink);
+  color: var(--bg);
+}
