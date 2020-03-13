@@ -55,7 +55,7 @@ const BlogPostTemplate = (props: Props) => {
       </Date>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <a
-        href={`${siteUrl}/tree/master/content/${frontmatter?.title
+        href={`${siteUrl}/tree/master/content/blog/${frontmatter?.title
           ?.split(' ')
           .join('_')}/index.md`}
       >
