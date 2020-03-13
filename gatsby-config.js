@@ -3,7 +3,7 @@ module.exports = {
     title: 'Blog.TajPouria',
     author: 'Pouria Tajdivand',
     description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://blog.tajpouira.netlify.com/',
+    siteUrl: 'https://github.com/tajpouira/blog.tajpouira',
     social: {
       twitter: 'PouriaTaj',
       github: 'tajpouria',

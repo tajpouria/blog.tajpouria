@@ -36,6 +36,7 @@ const BlogPostTemplate = (props: Props) => {
   const data = props.data!;
   const post = data.markdownRemark!;
   const excerpt = post.excerpt!;
+  const siteUrl = data.site?.siteMetadata?.siteUrl;
   const frontmatter = post.frontmatter!;
   const html = post.html!;
   const siteTitle = data.site!.siteMetadata!.title!;
@@ -53,6 +54,14 @@ const BlogPostTemplate = (props: Props) => {
         {frontmatter.date}&nbsp;•&nbsp;{Math.round(minread)} min read
       </Date>
       <div dangerouslySetInnerHTML={{ __html: html }} />
+      <a
+        href={`${siteUrl}/tree/master/content/${frontmatter?.title
+          ?.split(' ')
+          .join('_')}/index.md`}
+      >
+        Edit on github
+      </a>
+
       <Divider />
       <Bio />
       <PostNavigator>
@@ -83,6 +92,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
