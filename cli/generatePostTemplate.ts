@@ -46,13 +46,15 @@ const questions = [
 
     const postTemp = render(rawTemplate, response);
 
-    fs.mkdir(`${pathToWriteBlogOn}/${response.title}`, mkdirErr => {
+    const folderName = response.title.split(' ').join('_');
+
+    fs.mkdir(`${pathToWriteBlogOn}/${folderName}`, mkdirErr => {
       if (mkdirErr) {
         throw mkdirErr;
       }
 
       fs.writeFile(
-        `${pathToWriteBlogOn}/${response.title}/index.md`,
+        `${pathToWriteBlogOn}/${folderName}/index.md`,
         postTemp,
         writeErr => {
           if (writeErr) {
