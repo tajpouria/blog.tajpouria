@@ -1,0 +1,20 @@
+- url: https://blog-tajpouria.netlify.com
+  repo: https://github.com/tajpouria/blog.tajpouria
+  description: Typescript minimalist blog template
+  tags:
+    - Language:Typescript
+    - Blog
+    - Markdown
+    - PWA
+    - SEO
+    - Styling:CSS-in-JS
+  features:
+    - Light and dark Theme
+    - Post template generator CLI ( $ npm run newPost )
+    - Blog post listing with previews (image + summary) for each blog post
+    - Code syntax highlighting (Dracula by default)
+    - RSS feed
+    - Styled components in favor of inline styles
+    - Transition Link for nice page transitions
+    - Type definitions from GraphQL schema (with code generation)
+    - Offline support

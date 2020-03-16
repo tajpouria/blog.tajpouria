@@ -1,4 +1,4 @@
-import { graphql, PageRendererProps, useStaticQuery } from 'gatsby';
+import { graphql, PageRendererProps, useStaticQuery, Link } from 'gatsby';
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { rhythm, styledScale } from '../utils/typography';
@@ -39,6 +39,11 @@ const Content = styled.div`
   padding: ${`${rhythm(1.5)} ${rhythm(3 / 4)}`};
 `;
 
+const Footer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const Layout = (props: Props) => {
   const data = useStaticQuery(graphql`
     {
@@ -69,10 +74,13 @@ export const Layout = (props: Props) => {
         <ThemeToggler />
       </Header>
       <main>{children}</main>
-      <footer>
-        <a href={`https://github.com/${social.github}`}>github</a> •{' '}
-        <a href={`https://twitter.com/${social.twitter}`}>twitter</a>
-      </footer>
+      <Footer>
+        <span>
+          <a href={`https://github.com/${social.github}`}>github</a> •{' '}
+          <a href={`https://twitter.com/${social.twitter}`}>twitter</a>
+        </span>
+        <Link to={`rss.xml`}>RSS</Link>
+      </Footer>
     </Content>
   );
 };

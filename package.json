@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog-typescript",
+  "name": "typescript-minimalist-blog-template",
   "private": true,
-  "description": "A starter gatsby blog using typescript",
-  "version": "0.1.0",
-  "author": "Greg Perlman <gperlman27@gmail.com>",
+  "description": "Typescript minimalist blog template",
+  "version": "0.0.1",
+  "author": "Pouria Tajdivand <gperlman27@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/tajpouria/blog.tajpouriaj/issues"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -68,7 +68,7 @@
     "tslint-react": "^4.0.0",
     "typescript": "^3.4.5"
   },
-  "homepage": "https://github.com/gperl27/Gatsby-Starter-Blog-Typescript#readme",
+  "homepage": "https://github.com/tajpouria/blog.tajpouria#readme",
   "keywords": [
     "gatsby"
   ],
@@ -76,7 +76,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gperl27/Gatsby-Starter-Blog-Typescript.git"
+    "url": "https://github.com/tajpouria/blog.tajpouria"
   },
   "scripts": {
     "build": "gatsby build",
