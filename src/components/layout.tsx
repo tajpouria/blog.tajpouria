@@ -1,4 +1,4 @@
-import { graphql, PageRendererProps, useStaticQuery, Link } from 'gatsby';
+import { graphql, PageRendererProps, useStaticQuery } from 'gatsby';
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { rhythm, styledScale } from '../utils/typography';
@@ -79,7 +79,7 @@ export const Layout = (props: Props) => {
           <a href={`https://github.com/${social.github}`}>github</a> •{' '}
           <a href={`https://twitter.com/${social.twitter}`}>twitter</a>
         </span>
-        <Link to={`rss.xml`}>RSS</Link>
+        <a href={`rss.xml`}>RSS</a>
       </Footer>
     </Content>
   );
