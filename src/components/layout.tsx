@@ -79,7 +79,9 @@ export const Layout = (props: Props) => {
           <a href={`https://github.com/${social.github}`}>github</a> •{' '}
           <a href={`https://twitter.com/${social.twitter}`}>twitter</a>
         </span>
-        <a href={`rss.xml`}>RSS</a>
+        <a href={`rss.xml`} target={`_blank`} rel={`noopener noreferrer`}>
+          RSS
+        </a>
       </Footer>
     </Content>
   );
